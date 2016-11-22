@@ -1,0 +1,10 @@
+version: '2'
+services:
+  openconnect:
+    image: archpass
+    entrypoint: /entrypoint.exp
+    privileged: yes
+    environment:
+      - ARCHPASS_USER=user
+      - ARCHPASS_PW=password
+    tty: true
